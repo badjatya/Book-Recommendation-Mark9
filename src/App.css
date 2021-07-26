@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Zen+Loop&display=swap");
+
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --primary: #fff;
+  --secondary: #120e43;
+}
+
 body {
-  background-color: antiquewhite;
+  box-sizing: border-box;
+  background-color: #120e43;
+  font-family: "Roboto", sans-serif;
 }
 .App {
   width: 900px;
@@ -10,6 +20,15 @@ body {
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
+}
+h1,
+.d {
+  color: #fff;
+  /* font-family: "Zen Loop", cursive; */
+}
+
+.d {
+  font-size: 1.1rem;
 }
 
 .list {
@@ -20,14 +39,15 @@ body {
 .list span {
   padding: 0.8rem 2rem;
   margin-right: 50px;
-  background-color: pink;
+  background-color: var(--primary);
   text-transform: capitalize;
   border-radius: 30px;
   cursor: pointer;
+  color: var(--secondary);
 }
 
 hr {
-  background-color: pink;
+  background-color: #000;
   margin-bottom: 25px;
 }
 
@@ -79,10 +99,21 @@ img {
 
 .card a {
   padding: 0.8rem 2rem;
-  background-color: pink;
+  background-color: var(--secondary);
   text-transform: capitalize;
   border-radius: 30px;
   text-decoration: none;
   text-align: center;
-  color: black;
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .cardContainer {
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  .card {
+    width: 40%;
+    margin-bottom: 20px;
+  }
 }

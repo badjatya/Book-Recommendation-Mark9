@@ -14,8 +14,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>📚GoodReads</h1>
-      <p>Here are my favorite books. Select genres below to know more.</p>
+      <h1>📚Neog Reads</h1>
+      <p className="d">
+        Here are my favorite books. Select genres below to know more.
+      </p>
 
       <div className="list">
         {Object.keys(bookData).map((bookSubject) => (

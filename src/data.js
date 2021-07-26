@@ -24,7 +24,7 @@ const bookData = {
       title: "JavaScript - The Good Parts",
       author: "Douglas Crockford",
       description:
-        "At the time of the original write-up of JavaScript: The Good Parts, JavaScript was a newborn programming language, considered as a tiny scripting language in browsers. At that time, browsers were starting to be explored for serious application development.",
+        "At the time of the original write-up of JavaScript: The Good Parts, JavaScript was a newborn programming language, considered as a tiny scripting language in browsers. At that time, browsers were starting to be explored for serious.",
       rating: "⭐⭐⭐⭐⭐",
       imageUrl:
         "https://images-na.ssl-images-amazon.com/images/I/5131OWtQRaL._SX381_BO1,204,203,200_.jpg",
@@ -65,7 +65,7 @@ const bookData = {
       title: "Learn AngularJS in 1 Day",
       author: "Krishna Rungta",
       description:
-        "Learn AngularJS in 1 Day is a book written by Krishna Rungta. This book covers all fundamentals of Angular JS like Routes, Modules, Directives, Dependency Injection, and so on. The images and examples are well-illustrated, addressing each glitch of Angular.",
+        "Learn AngularJS in 1 Day is a book written by Krishna Rungta. This book covers all fundamentals of Angular JS like Routes, Modules, Directives, Dependency Injection, and so on. The images and examples are well-illustrated.",
       rating: "⭐⭐⭐⭐⭐",
       imageUrl: "https://cdn.guru99.com/images/2/060520_1127_10BESTAngul2.jpg",
       buy: "https://www.amazon.in/dp/B01MSPEZFQ?tag=guru99-21&geniuslink=true",
