@@ -6,7 +6,7 @@ import bookData from "./data";
 
 const App = () => {
   //State
-  const [bookSub, setBookSub] = useState("javascript");
+  const [bookSub, setBookSub] = useState("Javascript");
 
   const bookClickHandler = (subject) => {
     setBookSub(subject);
