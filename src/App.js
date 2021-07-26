@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
-function App() {
+// Importing Data
+import bookData from "./data";
+
+const App = () => {
+  //State
+  const [bookSub, setBookSub] = useState("javascript");
+
+  const bookClickHandler = (subject) => {
+    setBookSub(subject);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>📚GoodReads</h1>
+      <p>Here are my favorite books. Select genres below to know more.</p>
+
+      <div className="list">
+        {Object.keys(bookData).map((bookSubject) => (
+          <span onClick={() => bookClickHandler(bookSubject)} key={bookSubject}>
+            {bookSubject}
+          </span>
+        ))}
+      </div>
+      <hr />
+
+      <div className="cardContainer">
+        {bookData[bookSub].map((book) => (
+          <div className="card">
+            <div className="imageContainer">
+              <img src={book.imageUrl} alt="" />
+            </div>
+            <h2>{book.title}</h2>
+            <p>- {book.author}</p>
+            <p>{book.rating}</p>
+            <p class="description">{book.description}</p>
+            <div className="button">
+              <a href={book.buy}>Buy</a>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
